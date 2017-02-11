@@ -57,9 +57,13 @@ plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie
 DEFAULT_USER=`whoami`
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+export HOMEBREW_GITHUB_API_TOKEN="2a0f00f4b8db1f8c66bd952b02d9dd1047c0015d"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
