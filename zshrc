@@ -90,4 +90,6 @@ export HOMEBREW_GITHUB_API_TOKEN="2a0f00f4b8db1f8c66bd952b02d9dd1047c0015d"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias c="clear"
+alias home="cd ~"
+alias desk="cd ~/Desktop"
 . /Users/Matt/Applications/z-master/z.sh
