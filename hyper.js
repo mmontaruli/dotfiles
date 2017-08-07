@@ -52,6 +52,13 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
+    hyperTabs: {
+        trafficButtons: true,
+        border: true,
+        tabIconsColored: true,
+        activityColor: 'salmon',
+      },
+
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
     shell: ''
@@ -65,7 +72,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperline", "hyper-transparent", "hyperterm-tomorrow-night"],
+  plugins: [
+    "hyperline",
+    "hyper-transparent",
+    "hyperterm-tomorrow-night",
+    "hyper-tabs-enhanced",
+    "hyper-autohide-tabs"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
