@@ -65,7 +65,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-tomorrow-night'],
+  plugins: ["hyperline", "hyper-transparent", "hyperterm-tomorrow-night"],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
