@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Matt/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -57,8 +57,6 @@ plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie
 DEFAULT_USER=`whoami`
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,4 +90,9 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
-. /Users/Matt/Applications/z-master/z.sh
+. ~/Applications/z-master/z.sh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+

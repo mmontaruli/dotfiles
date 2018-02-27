@@ -73,8 +73,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperline",
-    "hyper-transparent",
+    // "hyperline",
+    // "hyper-transparent",
     "hyperterm-tomorrow-night",
     "hyper-tabs-enhanced",
     "hyper-autohide-tabs"

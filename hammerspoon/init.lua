@@ -45,6 +45,7 @@ k:bind({}, 'p', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl
 k:bind({}, 'v', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'v') end)
 -- Little Snitch Widget
 k:bind({}, 'o', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'o') end)
+k:bind({}, 'u', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'o') end)
 -- Unclutterer
 k:bind({}, '\\', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, '\\') end)
 -- Move left a space
@@ -66,18 +67,20 @@ launch = function(appname)
 end
 
 singleapps = {
-  {'q', 'Airmail 3'},
+  {'q', 'Newton'},
   {'w', 'OmniFocus'},
   {'e', 'Sublime Text'},
-  {'r', 'Safari'},
+  {'r', 'Firefox'},
   {'a', 'Messages'},
   {'n', 'nvALT'},
   {'s', 'Spotify'},
   {'d', 'Tweetbot'},
   {'f', 'Finder'},
-  {'z', 'Skype'},
+  {'z', 'Skype.app'},
   {'y', 'Hyper'},
-  {'t', 'iTerm'}
+  {'t', 'iTerm'},
+  {'v', 'Evernote'},
+  {'u', 'YakYak'}
 }
 for i, app in ipairs(singleapps) do
   k:bind({}, app[1], function() launch(app[2]); k:exit(); end)
