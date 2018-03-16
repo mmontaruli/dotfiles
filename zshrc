@@ -59,7 +59,13 @@ DEFAULT_USER=`whoami`
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Apache Ant
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANT_HOME=/Users/mattmontaruli/shell/apache-ant-1.10.2
+export PATH=$PATH:bin:$ANT_HOME/bin
+# end Apache Ant
 source $ZSH/oh-my-zsh.sh
+. `brew --prefix`/etc/profile.d/z.sh
 
 export HOMEBREW_GITHUB_API_TOKEN="2a0f00f4b8db1f8c66bd952b02d9dd1047c0015d"
 
@@ -95,4 +101,4 @@ alias desk="cd ~/Desktop"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

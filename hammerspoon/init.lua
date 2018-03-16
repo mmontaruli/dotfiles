@@ -45,8 +45,11 @@ k:bind({}, 'p', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl
 k:bind({}, 'v', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'v') end)
 -- Little Snitch Widget
 k:bind({}, 'o', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'o') end)
-k:bind({}, 'u', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'o') end)
 -- Unclutterer
+k:bind({}, 'u', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'u') end)
+-- YakYak
+k:bind({}, 'x', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'x') end)
+-- Slack
 k:bind({}, '\\', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, '\\') end)
 -- Move left a space
 -- k:bind({}, '1', nil, function() hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, '1') end)
@@ -75,12 +78,13 @@ singleapps = {
   {'n', 'nvALT'},
   {'s', 'Spotify'},
   {'d', 'Tweetbot'},
-  {'f', 'Finder'},
+  {'f', 'ForkLift'},
   {'z', 'Skype.app'},
   {'y', 'Hyper'},
   {'t', 'iTerm'},
   {'v', 'Evernote'},
-  {'u', 'YakYak'}
+  {'u', 'YakYak'},
+  {'x', 'Slack'}
 }
 for i, app in ipairs(singleapps) do
   k:bind({}, app[1], function() launch(app[2]); k:exit(); end)
