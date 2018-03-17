@@ -67,7 +67,7 @@ export PATH=$PATH:bin:$ANT_HOME/bin
 source $ZSH/oh-my-zsh.sh
 . `brew --prefix`/etc/profile.d/z.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="2a0f00f4b8db1f8c66bd952b02d9dd1047c0015d"
+# export HOMEBREW_GITHUB_API_TOKEN="2a0f00f4b8db1f8c66bd952b02d9dd1047c0015d"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
