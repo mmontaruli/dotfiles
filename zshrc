@@ -1,12 +1,49 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-
+export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_TIME_BACKGROUND="#282a2e"
+POWERLEVEL9K_TIME_FOREGROUND="249"
+# POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} \uE12E"
+POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
+
+POWERLEVEL9K_HIDE_BRANCH_ICON=true
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="➜ "
+
+
+# POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# POWERLEVEL9K_TIME_BACKGROUND='252'
+
+# POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{white} $(print $'\uE0B1') %F{white}"
+POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{#27292c} $(print $'\uE0B1') %F{#27292c}"
+POWERLEVEL9K_DIR_OMIT_FIRST_CHARACTER=true
+POWERLEVEL9K_FOLDER_ICON=""
+POWERLEVEL9K_HOME_SUB_ICON=""
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
-    fontFamily: '"Source Code Pro for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: '"SauceCodePro Nerd Font","Source Code Pro for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.75)',
@@ -26,6 +26,13 @@ module.exports = {
 
     // custom css to embed in the terminal window
     termCSS: '',
+    // termCSS: `
+    //   x-screen x-row {
+    //     line-height: initial;
+    //   }
+
+    //   .unicode-node {position: relative}
+    // `,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -75,9 +82,9 @@ module.exports = {
   plugins: [
     // "hyperline",
     // "hyper-transparent",
-    "hyperterm-tomorrow-night",
-    "hyper-tabs-enhanced",
-    "hyper-autohide-tabs"
+    "hyperterm-tomorrow-night"
+    // "hyper-tabs-enhanced",
+    // "hyper-autohide-tabs"
   ],
 
   // in development, you can create a directory under

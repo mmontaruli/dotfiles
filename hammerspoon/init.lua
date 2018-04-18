@@ -43,7 +43,7 @@ end
 -- invoke iTerm visor
 k:bind({}, 'i', nil, function() hs.eventtap.keyStroke({"ctrl"}, "`") end)
 -- invoke help
-k:bind({}, 'h', nil, function() hs.eventtap.keyStroke({"shift", "cmd"}, '/') end)
+-- k:bind({}, 'h', nil, function() hs.eventtap.keyStroke({"shift", "cmd"}, '/') end)
 -- invoke little snitch
 k:bind({}, 'o', nil, function() hs.eventtap.keyStroke({"cmd", "ctrl", "alt"}, "m") end)
 -- invoke lock screen
