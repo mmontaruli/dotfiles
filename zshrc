@@ -87,7 +87,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie)
+plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie Forklift)
 
 # User configuration
 
@@ -134,6 +134,12 @@ alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
 . ~/Applications/z-master/z.sh
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias top="sudo htop"
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
+alias help="tldr"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
