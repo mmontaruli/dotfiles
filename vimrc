@@ -17,10 +17,12 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'squarefrog/tomorrow-night.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'nathanaelkane/vim-indent-guides'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -51,3 +53,28 @@ filetype plugin indent on    " required
 syntax on
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
+set number
+set autoindent
+set cursorline
+set clipboard=unnamed
+highlight CursorLine cterm=NONE ctermbg=237 ctermfg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=237 gui=NONE guifg=DarkGrey guibg=NONE
+highlight CursorLineNR cterm=bold ctermbg=237 ctermfg=Grey
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled = 1
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='base16_eighties'
+
+set ts=2 sw=2 et
+let g:indent_guides_start_level = 2
+
+"let indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_auto_colors = 1
+
+" set background=dark
+" colorscheme base16-tomorrow-night
+" colorecheme base16-eighties

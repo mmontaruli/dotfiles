@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
@@ -20,7 +21,8 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_TIME_BACKGROUND="#282a2e"
+# POWERLEVEL9K_TIME_BACKGROUND="#282a2e"
+POWERLEVEL9K_TIME_BACKGROUND="239"
 POWERLEVEL9K_TIME_FOREGROUND="249"
 # POWERLEVEL9K_TIME_FORMAT="%D{%H:%M} \uE12E"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
@@ -87,7 +89,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie Forklift)
+plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie Forklift zsh-syntax-highlighting)
 
 # User configuration
 
@@ -98,7 +100,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # Apache Ant
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/Users/mattmontaruli/shell/apache-ant-1.10.2
+export ANT_HOME=/Users/mattmontaruli/shell/apache-ant-1.10.5
 export PATH=$PATH:bin:$ANT_HOME/bin
 # end Apache Ant
 source $ZSH/oh-my-zsh.sh
@@ -133,15 +135,21 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
-. ~/Applications/z-master/z.sh
+# . ~/Applications/z-master/z.sh
+. ~/z.sh
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
 alias help="tldr"
+alias startdebianvm="VBoxManage startvm \"Debian\""
+alias stopdebianvm="VBoxManage controlvm \"Debian\" poweroff"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+eval "$(rbenv init -)"
