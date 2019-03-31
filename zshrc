@@ -95,7 +95,7 @@ plugins=(git brew common-aliases dirhistory osx python rails ruby sublime httpie
 
 DEFAULT_USER=`whoami`
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Apache Ant
@@ -143,9 +143,16 @@ alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
 alias help="tldr"
-alias startdebianvm="VBoxManage startvm \"Debian\""
+alias startvm="VBoxManage startvm \"Debian\""
 alias stopdebianvm="VBoxManage controlvm \"Debian\" poweroff"
+alias bootdebianhvm="VBoxManage startvm \"Debian\" --type headless"
+alias starthvm="bootdebianhvm && ssh debian"
+alias stopdebian="stopdebianvm"
+alias stopvm="stopdebianvm"
+alias stophvm="stopdebianvm"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+
+export PATH="/usr/local/sbin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
