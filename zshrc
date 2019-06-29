@@ -150,6 +150,7 @@ alias starthvm="bootdebianhvm && ssh debian"
 alias stopdebian="stopdebianvm"
 alias stopvm="stopdebianvm"
 alias stophvm="stopdebianvm"
+alias forklift="open -a ForkLift ."
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 
 export PATH="/usr/local/sbin:$PATH"
