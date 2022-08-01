@@ -136,7 +136,7 @@ alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
 # . ~/Applications/z-master/z.sh
-. ~/z.sh
+. ~/shell/z.sh
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
@@ -151,6 +151,8 @@ alias stopdebian="stopdebianvm"
 alias stopvm="stopdebianvm"
 alias stophvm="stopdebianvm"
 alias forklift="open -a ForkLift ."
+alias bluetooth_restart="blueutil -p 0; blueutil -p 1"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 
 export PATH="/usr/local/sbin:$PATH"
