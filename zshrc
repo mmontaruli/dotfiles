@@ -153,6 +153,7 @@ alias stophvm="stopdebianvm"
 alias forklift="open -a ForkLift ."
 alias bluetooth_restart="blueutil -p 0; blueutil -p 1"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+eval $(thefuck --alias)
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 
 export PATH="/usr/local/sbin:$PATH"
