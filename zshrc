@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh installation.
 export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
@@ -138,6 +140,7 @@ alias desk="cd ~/Desktop"
 # . ~/Applications/z-master/z.sh
 . ~/shell/z.sh
 alias cat='bat'
+alias ls='exa'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -164,3 +167,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
