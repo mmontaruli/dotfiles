@@ -17,7 +17,6 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'squarefrog/tomorrow-night.vim'
 Plugin 'kien/ctrlp.vim'
-" Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
@@ -62,7 +61,6 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=237 gui=NONE guif
 highlight CursorLineNR cterm=bold ctermbg=237 ctermfg=Grey
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
-" vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 set laststatus=2
