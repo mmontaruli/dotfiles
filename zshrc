@@ -101,9 +101,9 @@ export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Apache Ant
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/Users/mattmontaruli/shell/apache-ant-1.10.5
-export PATH=$PATH:bin:$ANT_HOME/bin
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export ANT_HOME=/Users/mattmontaruli/shell/apache-ant-1.10.5
+# export PATH=$PATH:bin:$ANT_HOME/bin
 # end Apache Ant
 source $ZSH/oh-my-zsh.sh
 . `brew --prefix`/etc/profile.d/z.sh
