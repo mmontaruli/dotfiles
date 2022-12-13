@@ -1,7 +1,6 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh installation.
-# test
 export TERM="xterm-256color"
 export ZSH=~/.oh-my-zsh
 export LANG="en_US.UTF-8"
