@@ -132,8 +132,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
@@ -153,8 +153,8 @@ alias starthvm="bootdebianhvm && ssh debian"
 alias stopdebian="stopdebianvm"
 alias stopvm="stopdebianvm"
 alias stophvm="stopdebianvm"
-alias forklift="open -a ForkLift ."
-alias bluetooth_restart="blueutil -p 0; blueutil -p 1"
+# alias forklift="open -a ForkLift ."
+# alias bluetooth_restart="blueutil -p 0; blueutil -p 1"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 eval $(thefuck --alias)
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
