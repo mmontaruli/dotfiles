@@ -18,7 +18,7 @@ export LC_ALL="en_US.UTF-8"
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME=""
+# MTM# ZSH_THEME=""
 # POWERLEVEL9K_MODE='nerdfont-complete'
 # # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
@@ -92,7 +92,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew common-aliases dirhistory macos python rails ruby sublime httpie Forklift zsh-syntax-highlighting)
+plugins=(git brew common-aliases dirhistory macos python rails ruby sublime httpie Forklift zsh-syntax-highlighting z)
 
 # User configuration
 
@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+# zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 zplug load
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -146,6 +146,10 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh)"
+fi
 # Example aliases
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
@@ -155,7 +159,10 @@ alias desk="cd ~/Desktop"
 # . ~/Applications/z-master/z.sh
 . ~/shell/z.sh
 alias cat='bat'
-alias ls='exa'
+# alias ls='exa'
+alias ls='exa --icons --group-directories-first'
+alias ll='exa -l --icons --no-user --group-directories-first  --time-style long-iso'
+alias la='exa -la --icons --no-user --group-directories-first  --time-style long-iso'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
