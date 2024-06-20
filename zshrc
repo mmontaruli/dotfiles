@@ -50,9 +50,10 @@ alias c="clear"
 alias home="cd ~"
 alias desk="cd ~/Desktop"
 alias cat='bat'
-alias ls='exa --icons --group-directories-first'
-alias ll='exa -l --icons --no-user --group-directories-first  --time-style long-iso'
-alias la='exa -la --icons --no-user --group-directories-first  --time-style long-iso'
+alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
+#alias ls='exa --icons --group-directories-first'
+#alias ll='exa -l --icons --no-user --group-directories-first  --time-style long-iso'
+#alias la='exa -la --icons --no-user --group-directories-first  --time-style long-iso'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
