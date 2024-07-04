@@ -1,0 +1,20 @@
+import = [
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[font]
+  size = 16.0
+  normal =  { family = "Hack Nerd Font Mono", style = "Regular" }
+  bold = { family = "Hack Nerd Font Mono", style = "Bold" }
+  italic = { family = "Hack Nerd Font Mono", style = "Italic" }
+  bold_italic = { family = "Hack Nerd Font Mono", style = "Bold Italic" }
+
+[window]
+  padding = { x = 20, y = 30 }
+  dimensions = { columns = 140, lines = 40 }
+  decorations = "transparent"
+  opacity = 1.0
+  blur = true
+
+[env]
+term = "xterm-256color"
