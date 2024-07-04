@@ -43,12 +43,12 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 eval "$(zoxide init zsh)"
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias c="clear"
+# alias zshconfig="code ~/.zshrc"
+# alias ohmyzsh="code ~/.oh-my-zsh"
+# alias c="clear"
 # alias cd="z"
 alias home="cd ~"
-alias desk="cd ~/Desktop"
+# alias desk="cd ~/Desktop"
 alias cat='bat'
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
 #alias ls='exa --icons --group-directories-first'
