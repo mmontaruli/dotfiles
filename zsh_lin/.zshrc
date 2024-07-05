@@ -20,6 +20,10 @@ export PATH=$GOPATH/bin:$PATH
 
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
 alias top='htop'
+alias bat='batcat'
+alias cat='batcat'
+alias preview="fzf --preview 'batcat --color \"always\" {}'"
+alias inv='nvim $(fzf -m --preview="batcat --color=always {}")'
 
 precmd() {
     print ""
