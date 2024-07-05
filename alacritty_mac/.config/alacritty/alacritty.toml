@@ -15,6 +15,7 @@ import = [
   decorations = "transparent"
   opacity = 1.0
   blur = true
+  option_as_alt = "OnlyLeft"
 
 [env]
 term = "xterm-256color"
