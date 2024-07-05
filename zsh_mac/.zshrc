@@ -59,6 +59,7 @@ alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
 alias help="tldr"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
