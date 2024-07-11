@@ -215,7 +215,7 @@ plugins {
 //    - true
 //    - false (Default)
 //
-// simplified_ui true
+simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -352,7 +352,7 @@ plugins {
 // layout_dir "/path/to/my/layout_dir"
 //layout_dir "/home/parallels/.config/zellij/layouts/"
 //
-//default_layout "mtm-1"
+default_layout "mtm-1"
 
 
 // The folder in which Zellij will look for themes
