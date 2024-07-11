@@ -11,7 +11,7 @@ import = [
 
 [window]
   padding = { x = 20, y = 30 }
-  dimensions = { columns = 140, lines = 40 }
+  dimensions = { columns = 165, lines = 45 }
   decorations = "transparent"
   opacity = 1.0
   blur = true
