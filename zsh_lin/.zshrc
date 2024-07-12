@@ -25,9 +25,9 @@ alias cat='batcat'
 alias preview="fzf --preview 'batcat --color \"always\" {}'"
 alias inv='nvim $(fzf -m --preview="batcat --color=always {}")'
 
-precmd() {
-    print ""
-}
+#precmd() {
+#    print ""
+#}
 
 neofetch
 
