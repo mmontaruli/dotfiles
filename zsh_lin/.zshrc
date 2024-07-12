@@ -19,7 +19,7 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
-alias top='htop'
+alias top='sudo htop'
 alias bat='batcat'
 alias cat='batcat'
 alias preview="fzf --preview 'batcat --color \"always\" {}'"
