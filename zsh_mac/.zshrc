@@ -38,9 +38,10 @@ if ! zplug check --verbose; then
 fi
 # MTM end zplug
 
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh)"
-fi
+#if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+#  eval "$(oh-my-posh init zsh)"
+#fi
+eval "$(starship init zsh)"
 
 source <(fzf --zsh)
 
@@ -73,6 +74,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 eval "$(rbenv init -)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-precmd() {
-    print ""
-}
+#precmd() {
+#    print ""
+#}
