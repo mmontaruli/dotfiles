@@ -11,8 +11,8 @@ vim.wo.wrap = false
 vim.wo.cursorline = true
 vim.o.fillchars = 'eob: '
 
---vim.opt.nu = true
---vim.opt.rnu = true
+vim.opt.nu = true
+vim.opt.rnu = true
 
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
