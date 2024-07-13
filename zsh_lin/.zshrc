@@ -32,3 +32,5 @@ alias inv='nvim $(fzf -m --preview="batcat --color=always {}")'
 neofetch
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(~/.rbenv/bin/rbenv init - --no-rehash zsh)"
