@@ -9,11 +9,14 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		lazy = false,
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "tsserver", "solargraph", "html", "tailwindcss" },
-			})
-		end,
+    opts = {
+      auto_install = true,
+    },
+		-- config = function()
+		-- 	require("mason-lspconfig").setup({
+		-- 		ensure_installed = { "lua_ls", "tsserver", "solargraph", "html", "tailwindcss" },
+		-- 	})
+		-- end,
 	},
 	{
 		"neovim/nvim-lspconfig",

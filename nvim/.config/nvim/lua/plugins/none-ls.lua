@@ -14,6 +14,7 @@ return {
 				-- null_ls.builtins.diagnostics.eslint_d,
         require("none-ls.diagnostics.eslint_d"),
 				null_ls.builtins.formatting.rubocop,
+        null_ls.builtins.diagnostics.erb_lint,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

@@ -1,0 +1,73 @@
+# .rubocop.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2.4
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'bin/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+
+Layout/LineLength:
+  Max: 100
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Metrics/MethodLength:
+  Max: 10
+  Exclude:
+    - 'app/controllers/**/*'
+
+Metrics/ClassLength:
+  Max: 100
+  Exclude:
+    - 'app/controllers/**/*'
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Rails:
+  Enabled: true
+
+Rails/HttpStatus:
+  EnforcedStyle: symbol
+
+Rails/SkipsModelValidations:
+  Enabled: true
+
+Rails/TimeZone:
+  Enabled: true
+
+Rails/FindEach:
+  Enabled: true
+
+Rails/SaveBang:
+  Enabled: true
+
+Rails/Blank:
+  Enabled: true
+
+Rails/Present:
+  Enabled: true
+
+Rails/FilePath:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: percent
+
+# Customize as needed for your specific project needs.
+
