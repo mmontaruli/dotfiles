@@ -14,10 +14,10 @@ config.font_size = 18
 config.initial_cols = 130
 config.initial_rows = 35
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.85
-config.macos_window_background_blur = 65
-config.window_padding = {
-  top = 5,
-}
+-- config.window_background_opacity = 0.85
+-- config.macos_window_background_blur = 65
+-- config.window_padding = {
+--   top = 5,
+-- }
 -- and finally, return the configuration to wezterm
 return config
