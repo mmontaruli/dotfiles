@@ -1,6 +1,16 @@
 # Path to your oh-my-zsh installation.
+
+export COLORTERM="truecolor"
 #export TERM="xterm-256color"
-export TERM="screen-256color"
+#export TERM="screen-256color"
+# Enable 256-color and true color support
+
+# Set TERM depending on whether tmux is running
+if [ -n "$TMUX" ]; then
+  export TERM="screen-256color"
+else
+  export TERM="xterm-256color"
+fi
 export ZSH=~/.oh-my-zsh
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
