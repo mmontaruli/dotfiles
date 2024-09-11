@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+export TERM="screen-256color"
 export ZSH=~/.oh-my-zsh
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
@@ -81,8 +82,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export PYTHONPATH=$PYTHONPATH:/opt/homebrew/lib/python3.11/site-packages
 eval "$(rbenv init -)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #precmd() {
 #    print ""
 #}
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
