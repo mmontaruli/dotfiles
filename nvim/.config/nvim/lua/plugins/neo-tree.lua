@@ -12,6 +12,10 @@ return {
     hl(0, "Normal", { bg = "NONE" })
     hl(0, "NeoTreeNormal", { bg = "NONE" })
     hl(0, "NeoTreeEndOfBuffer", { bg = "NONE" })
+    hl(0, "NormalNC", { bg = "NONE" }) -- Normal non-current window
+    hl(0, "NeoTreeWinSeparator", { bg = "NONE", fg = "#44475a" })
+    hl(0, "WinSeparator", { bg = "NONE", fg = "#44475a" })
+    hl(0, "NeoTreeNormalNC", { bg = "NONE" })
     require("neo-tree").setup({
       filesystem = {
         filtered_items = {
