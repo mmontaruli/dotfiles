@@ -8,6 +8,10 @@ return {
   },
   config = function()
     vim.keymap.set('n', '<leader>n', ':Neotree filesystem reveal left<CR>', {})
+    local hl = vim.api.nvim_set_hl
+    hl(0, "Normal", { bg = "NONE" })
+    hl(0, "NeoTreeNormal", { bg = "NONE" })
+    hl(0, "NeoTreeEndOfBuffer", { bg = "NONE" })
     require("neo-tree").setup({
       filesystem = {
         filtered_items = {
