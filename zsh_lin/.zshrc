@@ -1,4 +1,12 @@
-export TERM="xterm-256color"
+# Set TERM depending on whether tmux is running
+export COLORTERM="truecolor"
+if [ -n "$TMUX" ]; then
+  export TERM="screen-256color"
+else
+  export TERM="xterm-256color"
+fi
+
+# export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
 #eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin.omp.json)"
 eval "$(starship init zsh)"
