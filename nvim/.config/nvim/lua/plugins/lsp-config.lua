@@ -30,6 +30,9 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities,
       })
+      lspconfig.pyright.setup({
+        capabilities = capabilities,
+      })
       lspconfig.solargraph.setup({
         capabilities = capabilities,
         settings = {
@@ -46,6 +49,10 @@ return {
       })
       lspconfig.tailwindcss.setup({
         capabilities = capabilities,
+      })
+      lspconfig.jinja_lsp.setup({
+        capabilities = capabilities,
+        filetypes = {"html", "htmldjango", "jinja2"},
       })
       lspconfig.emmet_language_server.setup({
         filetypes = {
