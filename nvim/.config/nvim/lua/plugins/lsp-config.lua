@@ -52,7 +52,7 @@ return {
       })
       lspconfig.jinja_lsp.setup({
         capabilities = capabilities,
-        filetypes = {"html", "htmldjango", "jinja2"},
+        filetypes = {"html", "htmldjango", "jinja2", "jinja.html"},
       })
       lspconfig.emmet_language_server.setup({
         filetypes = {
@@ -66,6 +66,7 @@ return {
           "scss",
           "pug",
           "typescriptreact",
+          "jinja.html",
         },
         -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
         -- **Note:** only the options listed in the table are supported.
