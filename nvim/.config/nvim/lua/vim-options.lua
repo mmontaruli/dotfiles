@@ -16,3 +16,9 @@ vim.opt.rnu = true
 
 vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 8
+
+-- Next buffer
+vim.api.nvim_set_keymap('n', '<C-l>', ':bnext<CR>', { noremap = true, silent = true })
+
+-- Previous buffer
+vim.api.nvim_set_keymap('n', '<C-h>', ':bprevious<CR>', { noremap = true, silent = true })
