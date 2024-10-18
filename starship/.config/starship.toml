@@ -24,14 +24,14 @@ palette = "catppuccin_mocha"
 #$python"""
 
 [directory]
-style = "blue"
+style = "bold blue"
 truncation_length = 2
 
 # [directory.substitutions]
 # '~/tests/starship-custom' = 'work-project'
 
 [character]
-success_symbol = "[❯](purple)"
+success_symbol = "[❯](mauve)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
