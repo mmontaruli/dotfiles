@@ -31,7 +31,7 @@ truncation_length = 2
 # '~/tests/starship-custom' = 'work-project'
 
 [character]
-success_symbol = "[❯](mauve)"
+success_symbol = "[❯](pink)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
