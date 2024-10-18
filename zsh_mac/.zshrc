@@ -74,6 +74,10 @@ alias home="cd ~"
 # alias desk="cd ~/Desktop"
 alias cat='bat'
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
+# Eza
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias ltree="eza --tree --level=2  --icons --git"
 #alias ls='exa --icons --group-directories-first'
 #alias ll='exa -l --icons --no-user --group-directories-first  --time-style long-iso'
 #alias la='exa -la --icons --no-user --group-directories-first  --time-style long-iso'
