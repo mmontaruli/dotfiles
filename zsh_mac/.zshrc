@@ -1,9 +1,4 @@
-# Path to your oh-my-zsh installation.
-
 export COLORTERM="truecolor"
-#export TERM="xterm-256color"
-#export TERM="screen-256color"
-# Enable 256-color and true color support
 
 # Set TERM depending on whether tmux is running
 if [ -n "$TMUX" ]; then
@@ -12,15 +7,14 @@ else
   export TERM="xterm-256color"
 fi
 export ZSH=~/.oh-my-zsh
-export LANG="en_US.UTF-8"
-export LC_COLLATE="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
-export LC_MESSAGES="en_US.UTF-8"
-export LC_MONETARY="en_US.UTF-8"
-export LC_NUMERIC="en_US.UTF-8"
-export LC_TIME="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
-# export CLICOLOR=1
+# export LANG="en_US.UTF-8"
+# export LC_COLLATE="en_US.UTF-8"
+# export LC_CTYPE="en_US.UTF-8"
+# export LC_MESSAGES="en_US.UTF-8"
+# export LC_MONETARY="en_US.UTF-8"
+# export LC_NUMERIC="en_US.UTF-8"
+# export LC_TIME="en_US.UTF-8"
+# export LC_ALL="en_US.UTF-8"
 
 DISABLE_AUTO_TITLE="true"
 
@@ -36,22 +30,19 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # MTM start zplug
-export ZPLUG_HOME=$(brew --prefix)/opt/zplug
-source $ZPLUG_HOME/init.zsh
-zplug "mafredri/zsh-async", from:github
-zplug load
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
+# export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+# source $ZPLUG_HOME/init.zsh
+# zplug "mafredri/zsh-async", from:github
+# zplug load
+# # Install plugins if there are plugins that have not been installed
+# if ! zplug check --verbose; then
+#     printf "Install? [y/N]: "
+#     if read -q; then
+#         echo; zplug install
+#     fi
+# fi
 # MTM end zplug
 
-#if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-#  eval "$(oh-my-posh init zsh)"
-#fi
 eval "$(starship init zsh)"
 
 source <(fzf --zsh)
@@ -66,21 +57,13 @@ function yy() {
 }
 
 eval "$(zoxide init zsh)"
-# alias zshconfig="code ~/.zshrc"
-# alias ohmyzsh="code ~/.oh-my-zsh"
-# alias c="clear"
-# alias cd="z"
 alias home="cd ~"
-# alias desk="cd ~/Desktop"
 alias cat='bat'
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
 # Eza
 alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
-#alias ls='exa --icons --group-directories-first'
-#alias ll='exa -l --icons --no-user --group-directories-first  --time-style long-iso'
-#alias la='exa -la --icons --no-user --group-directories-first  --time-style long-iso'
 alias ping='prettyping --nolegend'
 alias top="sudo htop"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -99,7 +82,4 @@ export PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bi
 export PYTHONPATH=$PYTHONPATH:/opt/homebrew/lib/python3.11/site-packages
 eval "$(rbenv init -)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#precmd() {
-#    print ""
-#}
 export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
