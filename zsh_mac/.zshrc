@@ -65,7 +65,8 @@ alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 alias ping='prettyping --nolegend'
-alias top="sudo htop"
+# alias top="sudo htop"
+alias top="btm"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
