@@ -22,3 +22,6 @@ vim.api.nvim_set_keymap('n', '<C-l>', ':bnext<CR>', { noremap = true, silent = t
 
 -- Previous buffer
 vim.api.nvim_set_keymap('n', '<C-h>', ':bprevious<CR>', { noremap = true, silent = true })
+
+-- vim.api.nvim_set_keymap('n', '<C-w>', ':bd<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>w', ':bd<CR>', { noremap = true, silent = true })
