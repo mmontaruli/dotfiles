@@ -58,6 +58,7 @@ function yy() {
 
 eval "$(zoxide init zsh)"
 alias home="cd ~"
+alias mc="EDITOR=nvim mc"
 alias cat='bat'
 alias ls='eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions'
 # Eza
