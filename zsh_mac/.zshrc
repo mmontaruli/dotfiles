@@ -7,14 +7,6 @@ else
   export TERM="xterm-256color"
 fi
 export ZSH=~/.oh-my-zsh
-# export LANG="en_US.UTF-8"
-# export LC_COLLATE="en_US.UTF-8"
-# export LC_CTYPE="en_US.UTF-8"
-# export LC_MESSAGES="en_US.UTF-8"
-# export LC_MONETARY="en_US.UTF-8"
-# export LC_NUMERIC="en_US.UTF-8"
-# export LC_TIME="en_US.UTF-8"
-# export LC_ALL="en_US.UTF-8"
 
 DISABLE_AUTO_TITLE="true"
 
@@ -29,19 +21,6 @@ source $ZSH/oh-my-zsh.sh
 . `brew --prefix`/etc/profile.d/z.sh
 
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-# MTM start zplug
-# export ZPLUG_HOME=$(brew --prefix)/opt/zplug
-# source $ZPLUG_HOME/init.zsh
-# zplug "mafredri/zsh-async", from:github
-# zplug load
-# # Install plugins if there are plugins that have not been installed
-# if ! zplug check --verbose; then
-#     printf "Install? [y/N]: "
-#     if read -q; then
-#         echo; zplug install
-#     fi
-# fi
-# MTM end zplug
 
 eval "$(starship init zsh)"
 
@@ -66,7 +45,6 @@ alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 alias ping='prettyping --nolegend'
-# alias top="sudo htop"
 alias top="btm"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
