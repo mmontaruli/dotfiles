@@ -2,6 +2,9 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd([[command! Wa wa]])
+vim.cmd([[command! Wqa wqa]])
+vim.cmd([[command! W w]])
 vim.opt.smartindent = true
 vim.opt.breakindent = true
 vim.g.mapleader = " "
