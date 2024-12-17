@@ -51,8 +51,10 @@ alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias du="ncdu --color dark -rr --exclude .git --exclude node_modules"
 alias help="tldr"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+alias dosboxwin="cd /Users/mattmontaruli/VirtualBox\ VMs/DosBox/ && dosbox-x -conf win98.conf"
 eval $(thefuck --alias)
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+export PATH="/Applications/dosbox-x.app/Contents/MacOS:$PATH"
 
 export PATH="/usr/local/sbin:$PATH"
 
