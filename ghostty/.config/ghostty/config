@@ -1,7 +1,11 @@
-theme = catppuccin-mocha
+# theme = catppuccin-mocha
+theme = tokyonight
 font-size = 19 
 window-height = 35
 window-width = 130
-window-padding-x = 1
-window-padding-y = 1
-
+# window-padding-x = 15
+# window-padding-y = 15
+# title = "👻 ghostty"
+# macos-titlebar-proxy-icon = hidden
+# background-opacity = .9
+# background-blur-radius = 20
